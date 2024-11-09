@@ -6,7 +6,7 @@ interface IResponse {
 export function parseToNumber(text: string): IResponse {
   const number = Number(text);
   return {
-    error: isNaN(number),
+    error: isNaN(number) || number === Infinity,
     value: number
   };
 }

@@ -22,6 +22,7 @@ export default function App() {
     
     if (error || errorReverse) {
       setError(true);
+      setResult(0)
     } else {
       setResult(Math.abs(value - valueReverse));
     }
@@ -30,12 +31,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className="input-field">
         Number: <input value={inputText} onChange={handleInput} />
         <button onClick={handleSubmit}>Submit</button>
       </div>
-      <div>Result: {result}</div>
-      {error && <p className="error-text">Failed to process: input must be number</p>}
+      <div className="result">Result: {result}</div>
+      {error && <p className="error-text">Failed to process: input is not valid or too long</p>}
     </div>
   );
 }

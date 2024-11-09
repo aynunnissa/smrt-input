@@ -3,7 +3,14 @@
   text-align: center;
 }
 
+.input-field {
+  margin: 20px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .error-text {
   color: red;
-  font-size: 10px;
+  font-size: 12px;
 }
