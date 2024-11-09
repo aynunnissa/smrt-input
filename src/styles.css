@@ -2,3 +2,8 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.error-text {
+  color: red;
+  font-size: 10px;
+}
